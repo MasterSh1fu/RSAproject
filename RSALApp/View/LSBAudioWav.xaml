@@ -1,0 +1,126 @@
+﻿<Window x:Class="RSALApp.View.LSBAudioWav"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSALApp.View"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        xmlns:viewmodels ="clr-namespace:RSALApp.ViewModel"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Height="1800" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <Button Background="{x:Null}" Width="auto" Height="auto" Command="{Binding OpenMainWindowCommmand}" BorderThickness="0">
+                <materialDesign:PackIcon Kind="HomeOutline" Width="40" Height="30"/>
+            </Button>
+            <MenuItem Header="Шифрование RSA" Command="{Binding OpenWindowCommmand}">
+            </MenuItem>
+            <MenuItem Header="Стеганография LSB" >
+                <MenuItem Header="Стеганография LSB в картинку" Command="{Binding OpenWindowLSBCommmand}"></MenuItem>
+                <MenuItem Header="Стеганография LSB в audio файл"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="О программе" Command="{Binding AboutProgrammCommand}"></MenuItem>
+        </Menu>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <ScrollViewer>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <GroupBox Header="Осаждение информации в audio файл" Margin="10" Padding="10">
+                        <StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                
+                                <Grid Grid.Column="0" Margin="10">
+                                    <StackPanel>
+                                        <Grid Margin="5,0,5,15">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox Text="{Binding AudioPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalContentAlignment="Top"  Margin="10,5,10,5" VerticalAlignment="Top" Background="White" Foreground="{DynamicResource MaterialDesignPaper}"></TextBox>
+                                            <Button Command="{Binding OpenAudioFile}" Grid.Column="1" Content="Загрузить wave"></Button>
+                                        </Grid>
+                                        <Grid Margin="5,0,5,15">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBox Text="{Binding TextInfoPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalContentAlignment="Top"  Margin="10,5,10,5" VerticalAlignment="Top" Background="White" Foreground="{DynamicResource MaterialDesignPaper}"></TextBox>
+                                            <Button Command="{Binding OpenInfoFile}" Grid.Column="1" Content="Загрузить txt"></Button>
+
+                                        </Grid>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Button Command="{Binding HideInfoInAudioFile}" Content="Осадить информацию в wave" Width="280" Margin="10"></Button>
+                                            <Button Command="{Binding SaveHideAudioFile}" Grid.Column="1" Content="Сохранить результат" Width="280" Margin="10"></Button>
+                                        </Grid>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+
+
+                            
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Grid.Row="1" Header="Получение информации из audio файла" Margin="10" Padding="10" Style="{DynamicResource MaterialDesignGroupBox}" materialDesign:ColorZoneAssist.Mode="Accent">
+                        <Grid Margin="10">
+                            <StackPanel>
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox Text="{Binding HideAaudioPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalContentAlignment="Top"  Margin="10,5,10,5" VerticalAlignment="Top" Background="White" Foreground="{DynamicResource MaterialDesignPaper}"></TextBox>
+                                    <Button Command="{Binding OpenHideAudioFile}" Grid.Column="1" Content="Загрузить wave" Background="#FFDD2C00" Margin="10,0,10,0"></Button>
+                                </Grid>
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Button Command="{Binding GetInfoFromFile}" Grid.Column="1" Content="Извлечь информацию" Margin="5" Background="#FFDD2C00"></Button>
+                                </Grid>
+                                <Grid>
+                                    <Image Margin="10" Source="{Binding HideImgPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Image>
+                                </Grid>
+                                <Grid>
+                                    <GroupBox Grid.Row="1" Header="Результат выполнения операции" Margin="10" Padding="10" Style="{DynamicResource MaterialDesignGroupBox}" materialDesign:ColorZoneAssist.Mode="Accent">
+                                        <TextBox Height="100" Text="{Binding Result, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalContentAlignment="Top"  Margin="10,5,10,5" VerticalAlignment="Top" Background="White" Foreground="{DynamicResource MaterialDesignPaper}"></TextBox>
+                                    </GroupBox>
+
+                                </Grid>
+                                <Grid>
+                                    <Button Command="{Binding SaveResultInTxt}" Content="Сохранить в файл" Background="#FFDD2C00" Margin="10,0,10,0" Width="200"></Button>
+                                </Grid>
+                            </StackPanel>
+                        </Grid>
+                    </GroupBox>
+
+
+
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Window>

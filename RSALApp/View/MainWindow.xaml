@@ -1,0 +1,63 @@
+﻿<Window x:Class="RSALApp.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSALApp"
+        mc:Ignorable="d"
+        Height="450" Width="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Menu VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <materialDesign:PackIcon Kind="HomeOutline" Width="40" Height="30"/>
+            <MenuItem Header="Шифрование RSA" Command="{Binding OpenWindowCommmand}">
+            </MenuItem>
+            <MenuItem Header="Стеганография LSB" >
+                <MenuItem Header="Стеганография LSB в картинку" Command="{Binding OpenWindowLSBCommmand}"></MenuItem>
+                <MenuItem Header="Стеганография LSB в audio файл" Command="{Binding OpenWindowLSBMethodForAudio}"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="О программе" Command="{Binding AboutProgrammCommand}"></MenuItem>
+        </Menu>
+        <GroupBox
+            Grid.Row="1" Grid.Column="0"
+            Header="Шифрование RSA"
+            Style="{DynamicResource MaterialDesignGroupBox}"
+            Margin="16"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3"
+            BorderThickness="0">
+            <TextBlock Margin="6,6,6,6" TextWrapping="Wrap" FontSize="14">
+                Алгоритм RSA - криптографический алгоритм с открытым ключом, основывающийся на вычислительной сложности задачи факторизации больших целых чисел. Генерация ключей проходит в автоматическом режиме случайным образом. Сгенерировав ключи, вы можете сохранить их в файл и применить для шифрования или расшифрования текстовой информации. Доступная длинна ключей входит в диапазон от 32 до 4096 bit, но помните, чем длиннее ключ, тем выше крипто стойкость алгоритма, и тем дольше выполнение программы. Генерация ключей 4096 bit может занять несколько минут.
+            </TextBlock>
+        </GroupBox>
+
+        <GroupBox
+            Grid.Row="1" Grid.Column="1"
+            Header="Стеганография LSB"
+            Style="{DynamicResource MaterialDesignGroupBox}"
+            Margin="16"
+            materialDesign:ColorZoneAssist.Mode="Accent"
+            BorderThickness="0">
+            <TextBlock Margin="6,6,6,6" TextWrapping="Wrap" FontSize="14">
+                Метод LSB (Наименьший значащий бит (Least Significant Bit)) – метод стеганографии, предназначенный для  сокрытия факта передачи зашифрованной информации. В качестве контейнера используется графический файл формата bmp, а также аудоифайл формата wav. Данные шифруются в последние биты байтов данных. Перед осаждением информации в картинку рекомендуется предварительно зашифровать информацию для повышения защиты в случае перехвата картинки.
+            </TextBlock>
+        </GroupBox>
+
+        <Button Command="{Binding OpenWindowCommmand}" Grid.Row="1" Grid.Column="0" Content="Метод RSA" Width="120" Height="30" VerticalAlignment="Bottom" Margin="15,15,15,15" HorizontalAlignment="Left"></Button>
+        <Button Command="{Binding OpenWindowLSBMethod}"  Background="#FFDD2C00" Grid.Row="1" Grid.Column="1" Content="Метод LSB" Width="120" Height="30" VerticalAlignment="Bottom" Margin="15,15,15,15" HorizontalAlignment="Left"></Button>
+    </Grid>
+</Window>

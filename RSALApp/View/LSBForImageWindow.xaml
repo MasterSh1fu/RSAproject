@@ -1,0 +1,172 @@
+﻿<Window x:Class="RSALApp.View.LSBForImageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSALApp.View"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        xmlns:viewmodels ="clr-namespace:RSALApp.ViewModel"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Height="1800" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <Button Background="{x:Null}" Width="auto" Height="auto" Command="{Binding OpenMainWindowCommmand}" BorderThickness="0">
+                <materialDesign:PackIcon Kind="HomeOutline" Width="40" Height="30"/>
+            </Button>
+            <MenuItem Header="Шифрование RSA" Command="{Binding OpenWindowRSACommmandFromLSB}">
+            </MenuItem>
+            <MenuItem Header="Стеганография LSB" >
+                <MenuItem Header="Стеганография LSB в картинку"></MenuItem>
+                <MenuItem Header="Стеганография LSB в audio файл" Command="{Binding OpenWindowLSBMethodForAudio}"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="О программе" Command="{Binding AboutProgrammCommandFromLSB}"></MenuItem>
+        </Menu>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <ScrollViewer>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <GroupBox Header="Осаждение информации в картинку" Margin="10" Padding="10">
+                        <StackPanel>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <GroupBox Grid.Column="1" Header="Информация об изображении" Margin="10">
+                                    <StackPanel>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Label>Size (KB):</Label>
+                                            <Label Grid.Column="1" Content="{Binding Size, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Label>
+                                        </Grid>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Label>Height (Pixel):</Label>
+                                            <Label Grid.Column="1" Content="{Binding Height, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Label>
+                                        </Grid>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Label>Width Pixel):</Label>
+                                            <Label Grid.Column="1" Content="{Binding Width, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Label>
+                                        </Grid>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Label>Can save (KB):</Label>
+                                            <Label Grid.Column="1" Content="{Binding CanSave ,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Label>
+                                        </Grid>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <Label>Size info (KB):</Label>
+                                            <Label Grid.Column="1" Content="{Binding TxtSize, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Label>
+                                        </Grid>
+                                    </StackPanel>
+                                </GroupBox>
+                                <Grid Grid.Column="0" Margin="10">
+                                    <StackPanel>
+                                        <Grid Margin="5,0,5,15">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBox Text="{Binding ImgPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalContentAlignment="Top"  Margin="10,5,10,5" VerticalAlignment="Top" Background="White" Foreground="{DynamicResource MaterialDesignPaper}"></TextBox>
+                                            <Button Command="{Binding OpenFileImg}" Grid.Column="1" Content="Загрузить img"></Button>
+                                        </Grid>
+                                        <Grid Margin="5,0,5,15">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                                <ColumnDefinition></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBox Text="{Binding TxtPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalContentAlignment="Top"  Margin="10,5,10,5" VerticalAlignment="Top" Background="White" Foreground="{DynamicResource MaterialDesignPaper}"></TextBox>
+                                            <Button Command="{Binding OpenTxtFileCommand}" Grid.Column="1" Content="Загрузить txt"></Button>
+                                            
+                                        </Grid>
+                                        <Button Command="{Binding HideInfoToImgCommand}" Content="Осадить информацию в img" Width="280" Margin="10"></Button>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                            <Grid>
+                                <Image Margin="10" Source="{Binding ImgPath}"></Image>
+                            </Grid>
+                       
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Button Command="{Binding SaveResultCommand}" Grid.Column="1" Content="Сохранить результат" Margin="5"></Button>
+                            </Grid>
+                        </StackPanel>
+                    </GroupBox>
+                    <GroupBox Grid.Row="1" Header="Получение информации из картинки" Margin="10" Padding="10" Style="{DynamicResource MaterialDesignGroupBox}" materialDesign:ColorZoneAssist.Mode="Accent">
+                        <Grid Margin="10">
+                            <StackPanel>
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBox Text="{Binding HideImgPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalContentAlignment="Top"  Margin="10,5,10,5" VerticalAlignment="Top" Background="White" Foreground="{DynamicResource MaterialDesignPaper}"></TextBox>
+                                    <Button Command="{Binding OpenHideImg}" Grid.Column="1" Content="Загрузить img" Background="#FFDD2C00" Margin="10,0,10,0"></Button>
+                                </Grid>
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Button Command="{Binding ExtractInformFromImage}" Grid.Column="1" Content="Извлечь информацию" Margin="5" Background="#FFDD2C00"></Button>
+                                </Grid>
+                                <Grid>
+                                    <Image Margin="10" Source="{Binding HideImgPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></Image>
+                                </Grid>
+                                <Grid>
+                                    <GroupBox Grid.Row="1" Header="Результат выполнения операции" Margin="10" Padding="10" Style="{DynamicResource MaterialDesignGroupBox}" materialDesign:ColorZoneAssist.Mode="Accent">
+                                        <TextBox Height="100" Text="{Binding MessageResult, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalContentAlignment="Top"  Margin="10,5,10,5" VerticalAlignment="Top" Background="White" Foreground="{DynamicResource MaterialDesignPaper}"></TextBox>
+                                    </GroupBox>
+                                    
+                                </Grid>
+                                <Grid>
+                                    <Button Command="{Binding SaveResultTxtCommand}" Content="Сохранить в файл" Background="#FFDD2C00" Margin="10,0,10,0" Width="200"></Button>
+                                </Grid>
+                            </StackPanel>
+                        </Grid>
+                    </GroupBox>
+                    
+                    
+                    
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Window>

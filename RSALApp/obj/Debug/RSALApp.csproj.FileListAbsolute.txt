@@ -1,0 +1,90 @@
+D:\Третий курс второй семестр\RSALApp\RSALApp\bin\Debug\RSALApp.exe.config
+D:\Третий курс второй семестр\RSALApp\RSALApp\bin\Debug\RSALApp.exe
+D:\Третий курс второй семестр\RSALApp\RSALApp\bin\Debug\RSALApp.pdb
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp.csprojAssemblyReference.cache
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\MainWindow.g.cs
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\App.g.cs
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp_MarkupCompile.cache
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp_MarkupCompile.lref
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\MainWindow.baml
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp.g.resources
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp.Properties.Resources.resources
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp.csproj.GenerateResource.cache
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp.csproj.CoreCompileInputs.cache
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp.exe
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp.pdb
+D:\Третий курс второй семестр\RSALApp\RSALApp\bin\Debug\MaterialDesignColors.dll
+D:\Третий курс второй семестр\RSALApp\RSALApp\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Третий курс второй семестр\RSALApp\RSALApp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Третий курс второй семестр\RSALApp\RSALApp\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\App.baml
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\RSALApp.csproj.CopyComplete
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\RSAEncryptionWindow.baml
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\RSAEncryptionWindow.g.cs
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\LSBForImageWindow.g.cs
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\LSBForImageWindow.baml
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\LSBAudioWav.g.cs
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\LSBAudioWav.baml
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\LSBMethodWindow.g.cs
+D:\Третий курс второй семестр\RSALApp\RSALApp\obj\Debug\View\LSBMethodWindow.baml
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\RSALApp.exe.config
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\RSALApp.exe
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\RSALApp.pdb
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\MaterialDesignColors.dll
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.csprojAssemblyReference.cache
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBAudioWav.g.cs
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBForImageWindow.g.cs
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBMethodWindow.g.cs
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\MainWindow.g.cs
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\RSAEncryptionWindow.g.cs
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\App.g.cs
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp_MarkupCompile.cache
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp_MarkupCompile.lref
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\App.baml
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBAudioWav.baml
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBForImageWindow.baml
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBMethodWindow.baml
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\MainWindow.baml
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\RSAEncryptionWindow.baml
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.g.resources
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.Properties.Resources.resources
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.csproj.GenerateResource.cache
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.csproj.CoreCompileInputs.cache
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.csproj.CopyComplete
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.exe
+C:\Users\Aleksey\Desktop\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.pdb
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\RSALApp.exe.config
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\RSALApp.exe
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\RSALApp.pdb
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\MaterialDesignColors.dll
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.csprojAssemblyReference.cache
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBAudioWav.g.cs
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBForImageWindow.g.cs
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBMethodWindow.g.cs
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\MainWindow.g.cs
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\RSAEncryptionWindow.g.cs
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\App.g.cs
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp_MarkupCompile.cache
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp_MarkupCompile.lref
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\App.baml
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBAudioWav.baml
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBForImageWindow.baml
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\LSBMethodWindow.baml
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\MainWindow.baml
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\View\RSAEncryptionWindow.baml
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.g.resources
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.Properties.Resources.resources
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.csproj.GenerateResource.cache
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.csproj.CoreCompileInputs.cache
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.csproj.CopyComplete
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.exe
+C:\Users\roman\OneDrive\Рабочий стол\Курсовой финал\Курсовой по защите Финальная версия\RSALApp\RSALApp\obj\Debug\RSALApp.pdb

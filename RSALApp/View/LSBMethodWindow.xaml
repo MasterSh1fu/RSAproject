@@ -1,0 +1,69 @@
+﻿<Window x:Class="RSALApp.View.LSBMethodWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSALApp.View"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        mc:Ignorable="d"
+        Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Menu VerticalAlignment="Top" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <Button Background="{x:Null}" Width="auto" Height="auto" Command="{Binding OpenMainWindowCommmand}" BorderThickness="0">
+                <materialDesign:PackIcon Kind="HomeOutline" Width="40" Height="30"/>
+            </Button>
+            <MenuItem Header="Шифрование RSA" Command="{Binding OpenWindowCommmand}">
+            </MenuItem>
+            <MenuItem Header="Стеганография LSB" >
+                <MenuItem Header="Стеганография LSB в картинку" Command="{Binding OpenWindowLSBCommmand}"></MenuItem>
+                <MenuItem Header="Стеганография LSB в audio файл" Command="{Binding OpenAudioWindow}"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="О программе" Command="{Binding AboutProgrammCommand}"></MenuItem>
+        </Menu>
+        <GroupBox
+            Grid.Row="1" Grid.Column="0"
+            Header="Стеганография в картинку BMP"
+            Style="{DynamicResource MaterialDesignGroupBox}"
+            Margin="16"
+            materialDesign:ShadowAssist.ShadowDepth="Depth3"
+            BorderThickness="0">
+            <StackPanel>
+                <Image Source="Images/bmp1.png" Width="250"/>
+            </StackPanel>
+
+
+
+        </GroupBox>
+
+        <GroupBox
+            Grid.Row="1" Grid.Column="1"
+            Header="Стеганография в audio файл"
+            Style="{DynamicResource MaterialDesignGroupBox}"
+            Margin="16"
+            materialDesign:ColorZoneAssist.Mode="Accent"
+            BorderThickness="0">
+            <StackPanel>
+                <Image Source="Images/wavfile.png" Width="250"/>
+            </StackPanel>
+        </GroupBox>
+
+        <Button Command="{Binding OpenWindowLSBCommmand}" Grid.Row="1" Grid.Column="0" Content="Метод LSBimg" Width="150" Height="30" VerticalAlignment="Bottom" Margin="15,15,15,15" HorizontalAlignment="Left"></Button>
+        <Button Command="{Binding OpenAudioWindow}"  Background="#FFDD2C00" Grid.Row="1" Grid.Column="1" Content="Метод LSBaudio" Width="150" Height="30" VerticalAlignment="Bottom" Margin="15,15,15,15" HorizontalAlignment="Left"></Button>
+    </Grid>
+</Window>
+
